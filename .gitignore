@@ -1,0 +1,55 @@
+﻿Write-Output "##active_line27##"
+# Python
+Write-Output "##active_line28##"
+__pycache__/
+Write-Output "##active_line29##"
+*.py[cod]
+Write-Output "##active_line30##"
+*.egg-info/
+Write-Output "##active_line31##"
+venv/
+Write-Output "##active_line32##"
+.venv/
+Write-Output "##active_line33##"
+env/
+Write-Output "##active_line34##"
+Write-Output "##active_line35##"
+# Veri (kisisel arsiv - git'e GITMESIN!)
+Write-Output "##active_line36##"
+data/
+Write-Output "##active_line37##"
+*.db
+Write-Output "##active_line38##"
+*.sqlite
+Write-Output "##active_line39##"
+*.sqlite3
+Write-Output "##active_line40##"
+*.json.gz
+Write-Output "##active_line41##"
+Write-Output "##active_line42##"
+# Anahtarlar (ASLA paylasilmaz!)
+Write-Output "##active_line43##"
+.env
+Write-Output "##active_line44##"
+*_key.txt
+Write-Output "##active_line45##"
+*_key.json
+Write-Output "##active_line46##"
+secrets.json
+Write-Output "##active_line47##"
+Write-Output "##active_line48##"
+# VS Code
+Write-Output "##active_line49##"
+.vscode/
+Write-Output "##active_line50##"
+.idea/
+Write-Output "##active_line51##"
+Write-Output "##active_line52##"
+# Isletim sistemi
+Write-Output "##active_line53##"
+.DS_Store
+Write-Output "##active_line54##"
+Thumbs.db
+Write-Output "##active_line55##"
+desktop.ini
+Write-Output "##active_line56##"
