@@ -73,3 +73,41 @@ SONUC: Baslangic bedava, tek gercek yatirim ZAMAN.
 - gh (GitHub CLI): KURULU (v2.101.0), hesap: hcan0x
 - GitHub repo: https://github.com/hcan0x/hafiza
 - Python: 3.11.9 (venv: .venv)
+
+
+===============================================================
+## OTURUM 3 (Menulu ilk calisan uygulama) YAPILANLAR  -  [FAZ 1 TAMAM]
+===============================================================
+- main.py yazildi: veritabani + tablo + interaktif menu
+- Fonksiyonlar (4 adet):
+    * veritabani_hazirla()  -> notlar/ klasoru + notes tablosu kurar
+    * not_ekle(title, content, mood="", tags="", attachment="")  -> not ekler
+    * menu_goster()         -> menuyu basar
+    * notlari_listele()     -> notlari en yeni ustte listeler
+- Ana dongu: while True + menu (1=ekle, 2=listele, 0=cikis)
+- Veri modeli (SQLite, dosya: hafiza.db):
+    notes(id INTEGER PK AUTOINCREMENT, title, content, mood, tags,
+          attachment, created_at, updated_at)   -> hepsi TEXT
+- Faz 1 (kaydet + listele) CALISIYOR ve test edildi (2 not kayitli)
+
+## OGRENILEN TUZAKLAR (kritik!)
+1. TURKCE KARAKTER: Kodda/dosya adinda hep ASCII "i" kullan.
+   ("hafıza" degil "hafiza"). Icinde sorun yok, icerikte serbest.
+   -> "hafıza.db" (noktasiz i) yanlislikla olusmustu, duzeltildi.
+2. SQL'DE VIRGUL: CREATE TABLE'da her sutun sonunda virgul olmali
+   (son sutun haric). Virgul eksikse sutunlar birlesir, hata verir.
+3. ? KULLANIMI: INSERT'te degerleri '?' ile ver -> SQL Injection onlenir.
+4. IF NOT EXISTS: tablo bir kere olusunca sema degismez.
+   Semayi degistirince eski .db'yi silip yeniden kurmak gerekir.
+
+## SIRADAKI ADIM (buradan basla!)
+1. [ONERI] Git commit -> calisan bu hali kaydet
+2. Yeni ozellikler (sirayla):
+   - Arama (etiket/tarih/kelime) -> "3 ay once ne yazmistim?"
+   - Not silme / duzenleme
+   - Bireysel not gosterme (id ile)
+3. Sonra: Faz 2 (AI beyin - Groq ile dogal dil sorgu)
+
+## NOTLAR
+- Charset/encoding: dosyalar UTF-8.
+- Kural: kod = ASCII, icerik = serbest (Turkce okunur).
