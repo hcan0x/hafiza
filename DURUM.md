@@ -51,12 +51,14 @@ SONUC: Baslangic bedava, tek gercek yatirim ZAMAN.
 - gh auth login yapildi -> hesap: hcan0x
 - GitHub repo olusturuldu ve push edildi: https://github.com/hcan0x/hafiza (PUBLIC)
 - Yerel repo = uzak repo senkron (main -> origin/main)
-- DURUM.md icindeki cöp satirlar (Write-Output active_line) temizlendi
+- DURUM.md icindeki cop satirlar (Write-Output active_line) temizlendi
+- Python sanal ortami (venv) kuruldu: .venv (Python 3.11.9), pip guncellendi (26.2.1)
+- .venv .gitignore sayesinde git'e gitmiyor (dogrulandi)
 
 ## SIRADAKI ADIM (buradan basla!)
 1. [TAMAM] GitHub'a baglama -> https://github.com/hcan0x/hafiza
-2. Python sanal ortami (venv) kurmak  <-- SIRADAKI
-3. Veri modelini tasarlamak (not nasil saklanacak? SQLite mi JSON mi?)
+2. [TAMAM] Python sanal ortami (venv) kuruldu -> .venv (Python 3.11.9)
+3. Veri modelini tasarlamak (not nasil saklanacak? SQLite mi JSON mi?)  <-- SIRADAKI
 4. Ilk calisan sey: pencere + not ekle + listele
 
 ## HATIRLATMA
@@ -70,3 +72,4 @@ SONUC: Baslangic bedava, tek gercek yatirim ZAMAN.
 - Git versiyon: 2.51.1
 - gh (GitHub CLI): KURULU (v2.101.0), hesap: hcan0x
 - GitHub repo: https://github.com/hcan0x/hafiza
+- Python: 3.11.9 (venv: .venv)
